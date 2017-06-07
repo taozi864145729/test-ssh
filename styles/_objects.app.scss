@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  height: 105%;
+}
+
+#app, #app__container, #app__svg {
+  width: 100%;
+  height: 100%;
+  position:relative;
+}
+
+#app__container {
+  background-size: cover;
+  &.bgpWorld {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/homeBGP.jpg);
+  }
+  &.bgpWorldDark {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/homeBGP.jpg);
+  }
+  &.bgpChina {
+    background-image: url(../assets/bgp2.jpg);
+  }
+}
+
+#app__detail {
+  width:100%;
+  height:100%;
+  position:relative;
+  z-index:999;
+  background-image: url(../assets/bgp2.jpg);
+  background-size: cover;
+}
+
+.flex__row {  display:flex; flex-direction: row}
+.flex__row_1 {flex:1}
+//test
+.NewBg{
+  background-image: url("../assets/bgp2.jpg");
+}
+#app__svg [chinasection]:hover{
+  fill: #369;
+}
+
+
+.app-slide-enter-active, .app-slide-leave-active {
+  transition: all .5s ease;
+}
+.app-slide-enter, .app-slide-leave-active {
+  transform: translateX(-100%);
+}
+input,button,select,textarea{
+  outline:none;
+}
+button.black{
+  display: block;
+  width: 50px;
+  height: 30px;
+  border: none;
+  background-image: url(../assets/backbutton.png);
+  background-size: 76%;
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+  background-color: transparent;
+  &:hover{
+    background-image: url(../assets/backbutton.png);
+    background-size: 76%;
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    background-color: transparent;
+  }
+}

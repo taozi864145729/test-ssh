@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="styles/main.css" rel="stylesheet"/>
+    <script src="vendor/vue.min.js"></script>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/snap.svg-min.js"></script>
+    <script src="vendor/snap.plugin-zindex.js"></script>
+    <style>
+        #test__container{
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+        #test__container button{
+            margin: 80px;
+            width: 150px;
+            height: 40px;
+            background: #fff;
+        }
+        .oldBg{
+            background-image: url("assets/homeBGP.jpg");
+        }
+        .newBg{
+            background-image: url("assets/bgp2.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <app></app>
+    </div>
+</body>
+<script>
+    Vue.component('app',{
+        template:`<div id="test__container"
+                        v-bind:class="{'oldBg':oldBgClick,'newBg':newBgClick}">
+                     <button v-on:click="toggleBg">toggle background-img</button>
+                    </div>`,
+        data: ()=> {
+            return {
+                oldBgClick: true,
+                newBgClick:false
+            }
+        },
+        methods:{
+            toggleBg:function () {
+                this.newBgClick = !this.newBgClick;
+            }
+        }
+    })
+    var app = new Vue({
+        el: '#app',
+        data:{
+            message:'hell'
+        }
+    })
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+.menu_container{
+  position: absolute;
+  top: 10%;
+  right:10%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.menu_container button{
+  color: #83B4E1;
+  border: solid 2px #83B4E1;
+  background: none;
+  width: 90px;
+  height: 30px;
+  margin-right: 18px;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+  &:active{
+      color: #fff;
+      background: #83B4E1;
+  }
+  &:hover{
+      color: #fff;
+      background: #83B4E1;
+  }
+}
+.menu_container button.back{
+  display: block;
+  width: 50px;
+  height: 30px;
+  border: none;
+  background-image: url(../assets/backbutton.png);
+  background-size: 76%;
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+  background-color: transparent;
+  &:hover{
+    background-image: url(../assets/backbutton.png);
+    background-size: 76%;
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    background-color: transparent;
+  }
+}

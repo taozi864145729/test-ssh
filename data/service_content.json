@@ -1,0 +1,32 @@
+[
+  {"id":1 , "name": "Cleaning & Facilities Support Services", "image": "assets/test.jpg",
+   "content" : "lorem ipsum dolor sit amet,consecteur aliqua.Ut enim ad minim veniam, quis nostrud exerictatiton ullamco laboris nisi ut",
+   "clients" : ["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"],
+    "ready": false
+  },
+  {"id":2 , "name": "Food Service & Well Being", "image": "assets/test.jpg",
+    "content" : "lorem ipsum dolor sit amet,consecteur aliqua.Ut enim ad minim veniam, quis nostrud exerictatiton ullamco laboris nisi ut",
+    "clients" : ["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"],
+    "ready": false
+  },
+  {"id":3 , "name": "Security & Risk Management", "image": "assets/test.jpg",
+    "content" : "lorem ipsum dolor sit amet,consecteur aliqua.Ut enim ad minim veniam, quis nostrud exerictatiton ullamco laboris nisi ut",
+    "clients" : ["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"],
+    "ready": false
+  },
+  {"id":4 , "name": "Facility Maintenance", "image": "assets/test.jpg",
+    "content" : "lorem ipsum dolor sit amet,consecteur aliqua.Ut enim ad minim veniam, quis nostrud exerictatiton ullamco laboris nisi ut",
+    "clients" : ["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"],
+    "ready": false
+  },
+  {"id":5 , "name": "Energy Services & Waste Management", "image": "assets/test.jpg",
+    "content" : "lorem ipsum dolor sit amet,consecteur aliqua.Ut enim ad minim veniam, quis nostrud exerictatiton ullamco laboris nisi ut",
+    "clients" : ["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"],
+    "ready": false
+  },
+  {"id":6 , "name": "Building Management Systems", "image": "assets/test.jpg",
+    "content" : "lorem ipsum dolor sit amet,consecteur aliqua.Ut enim ad minim veniam, quis nostrud exerictatiton ullamco laboris nisi ut",
+    "clients" : ["Lorem ipsum", "Lorem ipsum", "Lorem ipsum", "Lorem ipsum"],
+    "ready": false
+  }
+]

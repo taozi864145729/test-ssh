@@ -1,0 +1,36 @@
+.services__left_container{
+  position: absolute;
+  left:40px;
+  top:200px;
+  color: #ffffff;
+}
+.services_header{
+  margin: 0 0 25px 45px;
+}
+.services_content ul li{
+  height: 55px;
+  padding-left:45px;
+  display: flex;
+  align-items: center;
+}
+.services_content ul li span{
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  margin-left: 25px;
+}
+.input_check {position: absolute;width: 25px;height: 32px;visibility: hidden;}
+.input_check+label {
+  display: inline-block;
+  width: 25px;
+  height: 27px;
+  background: url(../assets/checkbox1.png) no-repeat;
+  background-position: -25px 0px;
+  background-size: cover;}
+.input_check:checked+label {
+  background-position: 0px 0px;
+}
+
+.service__name {
+  margin-left:30px;
+}

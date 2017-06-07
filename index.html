@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="styles/main.css" rel="stylesheet"/>
+    <script src="vendor/vue.min.js"></script>
+    <script src="vendor/vue-router.min.js"></script>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/snap.svg-min.js"></script>
+    <script src="vendor/snap.plugin-zindex.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <app></app>
+</div>
+<!--预加载第二张背景图-->
+<div id="preload-bgp"></div>
+</body>
+<script src="app/app.js"></script>
+<script src="app/app-svg.js"></script>
+<script src="app/app-logo.js"></script>
+<script src="app/app-about.js"></script>
+<script src="app/app-introduce.js"></script>
+
+<script src="app/china/app-bottom-buttons.js"></script>
+<script src="app/china/app-services-menu.js"></script>
+<script src="app/china/app-services-list.js"></script>
+<script src="app/china/app-services-card.js"></script>
+<script src="app/china/app-section-menu.js"></script>
+<script src="app/china/app-section-list.js"></script>
+
+<script src="app/detail/detail.js"></script>
+<script src="app/detail/detail-pictures.js"></script>
+<script>
+    var preloadImg = new Image();
+    preloadImg.src = "assets/bgp2.jpg";
+
+    var app = new Vue({
+        el: '#app'
+    })
+</script>
+</html>

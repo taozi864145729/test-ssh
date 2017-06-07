@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <script src="vendor/vue.min.js"></script>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/snap.svg-min.js"></script>
+    <script src="vendor/snap.plugin-zindex.js"></script>
+    <title>svg</title>
+    <style>
+        #svg {
+            background-size: cover;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="svg" ></div>
+<!--<input type="button" value="点击" id="button"/>-->
+</body>
+</html>
+<script>
+    var svg =  Snap('#svg');
+    Snap.load('world-map-points.svg', function (c) {
+        svg.append(c);
+        this.world = svg.select('#world');
+        this.china = svg.select('#china');
+        $('#china_mask').click((e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            this.world.animate({'opacity': 0}, 1000, mina.ease);
+            this.china.animate({ transform:'translate(2300, 120) scale(3.2)', opacity: '1'}, 1000, mina.easein)
+            this.china.toBack();
+            return ;
+        });
+
+        $('#svg').click((e)=> {
+            this.world.animate({'opacity': 1}, 200, mina.ease);
+            this.china.animate({ transform:'translate(2867, 617) scale(1)', opacity: '0'}, 200, mina.easein)
+            this.china.toFront();
+        })
+    })
+
+    //        var c = svg.paper.circle(50,50,40).attr({
+    //            fill:'blue'
+    //        });
+    //        document.querySelector('#button').addEventListener('click',function () {
+    //            var button = this;
+    //            c.animate({
+    //                fill:'red',
+    //                cy:'250',
+    //                cx:'250',
+    //                stroke:'green',
+    //                transform:'translate(0 0) scale(2) translate(-95 -75)'
+    //            },2000,mina.easein,function () {
+    //                button.value="red button"
+    //            });
+    //        });
+</script>
